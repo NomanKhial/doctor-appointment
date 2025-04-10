@@ -87,6 +87,20 @@ export const specialityData = [
 
 export const doctors = [
     {
+        _id: 'doc13',
+        name: 'Dr. Chloe Evans',
+        image: doc13,
+        speciality: 'General physician',
+        degree: 'MBBS',
+        experience: '4 Years',
+        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
+        fees: 50,
+        address: {
+            line1: '17th Cross, Richmond',
+            line2: 'Circle, Ring Road, London'
+        }
+    },
+    {
         _id: 'doc1',
         name: 'Dr. Richard James',
         image: doc1,
@@ -251,20 +265,6 @@ export const doctors = [
         fees: 50,
         address: {
             line1: '57th Cross, Richmond',
-            line2: 'Circle, Ring Road, London'
-        }
-    },
-    {
-        _id: 'doc13',
-        name: 'Dr. Chloe Evans',
-        image: doc13,
-        speciality: 'General physician',
-        degree: 'MBBS',
-        experience: '4 Years',
-        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
-        fees: 50,
-        address: {
-            line1: '17th Cross, Richmond',
             line2: 'Circle, Ring Road, London'
         }
     },
