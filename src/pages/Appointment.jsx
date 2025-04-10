@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Apoinments() {
+function Appointment() {
     return (
         <div>
-            Apoinments
+            Appointment
         </div>
     )
 }
 
-export default Apoinments
+export default Appointment
