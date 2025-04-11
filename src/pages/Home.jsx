@@ -1,10 +1,10 @@
 import React from 'react'
-import Slider from '../components/Slider'
+import Hero from '../components/Hero'
 
 function Home() {
     return (
         <div className='text-3xl'>
-            <Slider />
+            <Hero />
         </div>
     )
 }

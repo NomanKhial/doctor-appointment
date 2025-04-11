@@ -55,9 +55,9 @@ const Nav = () => {
 
                             <div className='absolute top-0 left-0 pt-14 text-base font-medium text-gray-700 hidden group-hover:block'>
                                 <ul className='min-w-48 bg-stone-100 flex flex-col gap-4 p-4 rounded-md'>
-                                    <Link to='/profile'>Profile</Link>
-                                    <Link to='/appointment'>Appointments</Link>
-                                    <Link to='/about'>Logout</Link>
+                                    <Link className='hover:text-black' to='/profile'>Profile</Link>
+                                    <Link className='hover:text-black' to='/appointment'>Appointments</Link>
+                                    <Link className='hover:text-black' to='/about'>Logout</Link>
                                 </ul>
                             </div>
 
