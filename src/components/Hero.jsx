@@ -14,7 +14,7 @@ function Hero() {
                     <p className='hidden sm:block'>Simply browse through our extensive list of trusted doctors, <br /> Schedule appointment Now!</p>
                 </div>
 
-                <a to="/appointment" className=''>Book Appointment <img src={assets.arrow_icon} /></a>
+                <a href='#speciality' className='bg-white flex items-center gap-2 px-8 py-3 rounded-full text-gray-500 text-sm m-auto md:m-0 hover:scale-105 transition-all duration-300 cursor-pointer'>Book Appointment <img className='w-3' src={assets.arrow_icon} /></a>
             </section>
 
 
