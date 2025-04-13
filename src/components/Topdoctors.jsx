@@ -1,10 +1,12 @@
-import React from 'react'
-import { doctors } from "../assets/assets_frontend/assets"
+import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { AppContext } from '../context/AppContext'
 function Topdoctors() {
     // navigate to check doctor details
     const navigate = useNavigate()
 
+    // doctors data from context
+    const { doctors } = useContext(AppContext)
 
     return (
         <section className='flex flex-col items-center gap-4 text-gray-900 my-16 md:mx-10'>
@@ -28,7 +30,7 @@ function Topdoctors() {
                     </div>
                 ))}
             </section>
-            <button className=' bg-blue-50 text-gray-600 rounded-full px-12 py-3 mt-10'>More</button>
+            <button onClick={() => { navigate('/doctors'); scrollTo(0, 0) }} className=' bg-blue-50 text-gray-600 rounded-full px-12 py-3 mt-10'>More</button>
 
         </section>
     )

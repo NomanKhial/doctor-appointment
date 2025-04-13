@@ -1,7 +1,9 @@
-import React from 'react'
-import { doctors } from "../assets/assets_frontend/assets"
+import React, { useContext } from 'react'
 import { Box, Typography } from '@mui/joy'
+import { AppContext } from '../context/AppContext'
 function Doctors() {
+
+    const { doctors } = useContext(AppContext)
     return (
         <section className='border flex flex-wrap w-full gap-2 justify-center'>
             {doctors.map(doctor => (
