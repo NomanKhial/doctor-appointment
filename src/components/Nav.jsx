@@ -18,9 +18,9 @@ const Nav = () => {
 
     return (
         <nav className='flex items-center justify-between text-sm py-4 mb-5 border-b  '>
-            <div>
+            <NavLink to="/">
                 <img src={assets.logo} />
-            </div>
+            </NavLink>
 
             {/* navlinks */}
             <ul className='flex gap-3 font-medium'>
