@@ -11,7 +11,7 @@ function SpecialityMenu() {
 
             <ul className='flex sm:justify-center gap-4 overflow-scroll pt-5'>
                 {specialityData.map((item, id) => (
-                    <Link onClick={() => scrollTo(0, 0)} className='flex flex-col items-center text-xs flex-shrink-0 cursor-pointer hover:translate-y-[-10px] transition-all duration-300 ' key={id} to={`speciality/${item.speciality}`}>
+                    <Link onClick={() => scrollTo(0, 0)} className='flex flex-col items-center text-xs flex-shrink-0 cursor-pointer hover:translate-y-[-10px] transition-all duration-300 ' key={id} to={`doctors/${item.speciality}`}>
                         <img className='w-16 sm:w-24 mb-2' src={item.image} />
                         <p>{item.speciality}</p>
                     </Link>

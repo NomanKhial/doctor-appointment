@@ -23,6 +23,7 @@ function Topdoctors() {
                             <div className='flex items-center text-center text-sm gap-2  text-green-500'>
                                 <p className='w-2 h-2 rounded-full bg-green-500'></p>
                                 <p>Available</p>
+                                <p>{doctor.degree}</p>
                             </div>
                             <p className='text-lg font-medium text-gray-900'>{doctor.name}</p>
                             <p className='text-gray-600 text-sm'>{doctor.speciality}</p>

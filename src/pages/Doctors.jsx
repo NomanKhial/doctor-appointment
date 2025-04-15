@@ -1,21 +1,12 @@
-import React, { useContext } from 'react'
-import { Box, Typography } from '@mui/joy'
-import { AppContext } from '../context/AppContext'
-function Doctors() {
+import React from 'react'
+import { useParams } from 'react-router-dom'
 
-    const { doctors } = useContext(AppContext)
+function Doctors() {
+    const { speciality } = useParams()
     return (
-        <section className='border flex flex-wrap w-full gap-2 justify-center'>
-            {doctors.map(doctor => (
-                <div className='border mt-10 p-[4px] rounded-md shadow'>
-                    <img className='max-w-[380px] object-cover object-center' key={doctor._id} src={doctor.image} />
-                    <Box className='flex justify-between px-[14px] pt-[10px]'>
-                        <Typography>{doctor.name}</Typography>
-                        <Typography>{doctor.fees}$ / hour</Typography>
-                    </Box>
-                </div>
-            ))}
-        </section>
+        <div>
+            {console.log(speciality)}
+        </div>
     )
 }
 
