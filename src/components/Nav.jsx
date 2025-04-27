@@ -57,7 +57,7 @@ const Nav = () => {
                                 <ul className='min-w-48 bg-stone-100 flex flex-col gap-4 p-4 rounded-md'>
                                     <Link className='hover:text-black' to='/profile'>Profile</Link>
                                     <Link className='hover:text-black' to='/appointment'>Appointments</Link>
-                                    <Link className='hover:text-black' to='/about'>Logout</Link>
+                                    <Link onClick={() => setToken(false)} className='hover:text-black' to='/about'>Logout</Link>
                                 </ul>
                             </div>
 
