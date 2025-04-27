@@ -7,6 +7,7 @@ import Account from "./pages/Account"
 import Appointment from './pages/Appointment'
 import Nav from './components/Nav'
 import Contact from './pages/Contact'
+import About from './pages/About'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/account' element={<Account />} />
         <Route path='/appointment' element={<Appointment />} />
         <Route path='/appointment/:docId' element={<Appointment />} />
+        <Route path='/about' element={<About />} />
       </Routes>
     </div>
   )
