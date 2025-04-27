@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { AppContext } from '../context/AppContext'
 import { assets } from '../assets/assets_frontend/assets'
+import RelatedDoc from '../components/RelatedDoc'
 
 function Appointment() {
     // get doctor id from params
@@ -20,6 +21,9 @@ function Appointment() {
 
     // call function on state changes
     useEffect(() => { fetchDocData() }, [docId, doctors])
+
+
+
     return docInfo && (
         <section>
 
@@ -31,7 +35,7 @@ function Appointment() {
                 {/* textual data */}
                 <div className='flex-1 border border-gray-400 p-8 rounded-lg py-7 bg-white mx-2 sm:mx-0 mt-[-80px] sm:mt-0'>
                     <p className='flex items-center gap-2 text-gray-900 text-2xl font-medium'>
-                        <h3>{docInfo.name}</h3>
+                        <p>{docInfo.name}</p>
                         <img className='w-5' src={assets.verified_icon} />
                     </p>
                     <div className=' flex items-center gap-2 text-gray-600 mt-1 text-sm'>
@@ -50,7 +54,7 @@ function Appointment() {
                     <p className='text-gray-500 mt-4 font-medium'>Appointment fee: <span>{currencySymbol}{docInfo.fees}</span></p>
                 </div>
             </div>
-
+            <RelatedDoc docId={docId} speciality={docInfo.speciality} />
         </section>
     )
 }
