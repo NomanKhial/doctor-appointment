@@ -12,7 +12,7 @@ function Banner() {
                     <p>Book Appointment </p>
                     <p className='mt-4'>With 100+ Trusted Doctors</p>
                 </div>
-                <button onClick={() => { navigate('/login'); scrollTo(0, 0) }} className='bg-white text-sm sm:text-base text-gray-600 px-8 py-3 mt-6 rounded-full hover:scale-105 transition-all duration-300'>Create account</button>
+                <button onClick={() => { navigate('/account'); scrollTo(0, 0) }} className='bg-white text-sm sm:text-base text-gray-600 px-8 py-3 mt-6 rounded-full hover:scale-105 transition-all duration-300'>Create account</button>
             </div>
 
             {/* ###### Right Side ##### */}
