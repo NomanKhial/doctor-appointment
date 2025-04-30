@@ -19,11 +19,11 @@ const Nav = () => {
     return (
         <nav className='flex items-center justify-between text-sm py-4 mb-5 border-b  '>
             <NavLink to="/">
-                <img src={assets.logo} />
+                <img className=' w-full max-w-[150px]' src={assets.logo} />
             </NavLink>
 
             {/* navlinks */}
-            <ul className='flex gap-3 font-medium'>
+            <ul className=' hidden sm:flex gap-3 font-medium'>
                 <NavLink to="/">
                     <li className='py-1'>Home</li>
                     <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden' />
@@ -53,7 +53,7 @@ const Nav = () => {
 
                             {/* dropdown menu */}
 
-                            <div className='absolute top-0 left-0 pt-14 text-base font-medium text-gray-700 hidden group-hover:block'>
+                            <div className='absolute top-0 right-0 pt-14 text-base font-medium text-gray-700 hidden group-hover:block'>
                                 <ul className='min-w-48 bg-stone-100 flex flex-col gap-4 p-4 rounded-md'>
                                     <Link className='hover:text-black' to='/profile'>Profile</Link>
                                     <Link className='hover:text-black' to='/appointment'>Appointments</Link>

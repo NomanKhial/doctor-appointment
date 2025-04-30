@@ -8,6 +8,7 @@ import Appointment from './pages/Appointment'
 import Nav from './components/Nav'
 import Contact from './pages/Contact'
 import About from './pages/About'
+import AppointmentsBook from './pages/AppointmentsBook'
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/profile' element={<Profile />} />
         <Route path='/account' element={<Account />} />
-        <Route path='/appointment' element={<Appointment />} />
+        <Route path='/appointment' element={<AppointmentsBook />} />
         <Route path='/appointment/:docId' element={<Appointment />} />
         <Route path='/about' element={<About />} />
       </Routes>

@@ -15,10 +15,10 @@ function Contact() {
                     </div>
                     <div>
                         <p className=' text-gray-500'>Tel: (092) 487498</p>
-                        <p className=' text-gray-500'>Email: nomankhail@gmail.com</p>
+                        <p className=' text-gray-500'>Email: test@gmail.com</p>
                     </div>
                     <div className='flex flex-col gap-2 items-start'>
-                        <h3 className='font-semibold text-sm text-gray-500'>Careers at PRESCRIPTO</h3>
+                        <h3 className='font-semibold text-sm text-gray-500'>Careers</h3>
                         <p className=' text-gray-500'>Learn more about our teams and job openings.</p>
                         <button className='border px-6 py-3 hover:bg-primary hover:text-white transition-all duration-300 rounded-lg'>Explore Jobs</button>
                     </div>
